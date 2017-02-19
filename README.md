@@ -5,6 +5,8 @@ Detta är ett program för att samla ihop RDF-filer (XML) från
 och skapa en .csv-fil. Denna .csv-fil funkar bra att importera i
 exempelvis Excel eller Google Docs.
 
+Resultatet är alltså en TV-tablå i Excel-format.
+
 Programmet är skrivet i Python. Jag har använt Python 2.7.10 (Mac).
 
 ---
