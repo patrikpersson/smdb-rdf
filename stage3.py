@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+# ============================================================================
+# smdb-rdf:
+# Samlar ihop RDF-filer (XML) från smdb.kb.se och skapar en .csv-fil.
+# (c) Patrik Persson 2017. Se LICENSE för licens.
+# ============================================================================
+
 import os
 import os.path
 import sys
