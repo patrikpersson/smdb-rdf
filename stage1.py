@@ -4,7 +4,7 @@
 # ============================================================================
 # smdb-rdf:
 # Samlar ihop RDF-filer (XML) från smdb.kb.se och skapar en .csv-fil.
-# (c) Patrik Persson 2017. Se LICENSE för licens.
+# (c) Patrik Persson 2017. Se README.md för instruktioner; LICENSE för licens.
 # ============================================================================
 
 import HTMLParser
@@ -13,16 +13,6 @@ import os.path
 import sys
 import urllib2
 
-# ----------------------------------------------------------------------------
-# Steg 1
-#
-# Laddar ner RDF-filer för årets alla dagar.
-#
-# Kör som (om du vill ha RDF-filerna för 1981 års TV-program)
-#
-#   python stage1.py 1981
-#
-# Då skapas katalogen 'rdf-1981' med RDF-filer.
 # ----------------------------------------------------------------------------
 
 if len(sys.argv) < 2:

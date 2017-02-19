@@ -4,7 +4,7 @@
 # ============================================================================
 # smdb-rdf:
 # Samlar ihop RDF-filer (XML) från smdb.kb.se och skapar en .csv-fil.
-# (c) Patrik Persson 2017. Se LICENSE för licens.
+# (c) Patrik Persson 2017. Se README.md för instruktioner; LICENSE för licens.
 # ============================================================================
 
 import os.path
@@ -12,29 +12,6 @@ import sys
 import urllib2
 from xml.dom import minidom
 
-# ----------------------------------------------------------------------------
-# Steg 2
-#
-# Går igenom en RDF-fil och laddar ner alla refererade
-# RDF-filer (för individuella program).
-#
-# Kör som (om du vill ha RDF-filerna för 1981 års TV-program)
-#
-#   python stage1.py rdf-1981/001697731.rdf
-#
-# eller
-#
-#   python stage1.py rdf-1981/*.rdf
-#
-# De refererade RDF-filerna lagras i kataloger, exempelvis för
-# exemplet ovan
-#
-# rdf-1981/001697731/1.rdf
-# rdf-1981/001697731/2.rdf
-# rdf-1981/001697731/3.rdf
-# ...
-#
-# Detta förutsätter att stage1.py har körts för 1981
 # ----------------------------------------------------------------------------
 
 if len(sys.argv) < 2:
