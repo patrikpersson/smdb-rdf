@@ -4,7 +4,7 @@
 # ============================================================================
 # smdb-rdf:
 # Samlar ihop RDF-filer (XML) från smdb.kb.se och skapar en .csv-fil.
-# (c) Patrik Persson 2017. Se README.md för instruktioner; LICENSE för licens.
+# (c) Patrik Persson 2017. Se README.md för instruktioner, LICENSE för licens.
 # ============================================================================
 
 import os.path

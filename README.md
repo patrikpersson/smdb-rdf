@@ -26,6 +26,7 @@ Det skapas nu underkataloger i `rdf-1981` för var och en av inspelningarna,
 och i dessa kataloger placeras RDF-filer för respektive TV-program. Exempel:
 
 * rdf-1981
+  * ...
   * 001697919.rdf
   * 001697919
     * 1.rdf
