@@ -5,6 +5,14 @@ Detta är ett program för att samla ihop RDF-filer (XML) från
 och skapa en .csv-fil. Denna .csv-fil funkar bra att importera i
 exempelvis Excel eller Google Docs.
 
+---
+
+**OBSERVERA:**
+Detta program laddar endast ner _mediebeskrivningar_, inte TV-program.
+Själva TV-programmen skyddas av upphovsrätt och kan endast lånas direkt från SMDB.
+
+---
+
 Programmet körs i tre steg. Nedladdningen görs för ett år i taget. Här används
 år 1981 som exempel.
 
