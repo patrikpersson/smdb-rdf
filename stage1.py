@@ -14,14 +14,14 @@ import urllib2
 #
 # Kör som (om du vill ha RDF-filerna för 1981 års TV-program)
 #
-# python stage1.py 1981
+#   python stage1.py 1981
 #
 # Då skapas katalogen 'rdf-1981' med RDF-filer.
 # ----------------------------------------------------------------------------
 
 if len(sys.argv) < 2:
     print "användning:"
-    print "python %s <årtal>" % sys.argv[0]
+    print "python %s <årtal>" % os.path.basename(sys.argv[0])
     sys.exit(-1)
 
 YEAR = sys.argv[1]
