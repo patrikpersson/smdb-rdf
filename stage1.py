@@ -15,7 +15,7 @@ import urllib2
 
 # ----------------------------------------------------------------------------
 
-if len(sys.argv) < 2:
+if len(sys.argv) != 2:
     print "användning:"
     print "python %s <årtal>" % os.path.basename(sys.argv[0])
     sys.exit(-1)

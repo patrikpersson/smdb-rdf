@@ -19,12 +19,12 @@ def collect_text(node):
     text_data = []
     for node in node.childNodes:
         if node.nodeType == node.TEXT_NODE:
-            text_data.append(node.data.strip().strip('.').replace('\n', ' '))
+            text_data.append(node.data.strip().strip('.').replace('\n', ' ').replace(';',''))
     return ' '.join(text_data)
 
 # ----------------------------------------------------------------------------
 
-if len(sys.argv) < 2:
+if len(sys.argv) != 2:
     print "användning:"
     print "python %s <rdf-katalog>" % os.path.basename(sys.argv[0])
     sys.exit(-1)
@@ -44,4 +44,4 @@ for _, dirs, _ in os.walk(basedir):
             channel = collect_text(xml.getElementsByTagName('po:channel')[0])
             descr = collect_text(xml.getElementsByTagName('dc:description')[0])
             
-            print ("%s;%s;%s;%s" % (date, channel, title, descr)).encode('utf-8')
+            print ("%s;%s;%s;%s" % (date, channel, title, descr)).replace('"', '').replace("'","").encode('utf-8');
