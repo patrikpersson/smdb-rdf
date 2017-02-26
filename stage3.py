@@ -39,7 +39,7 @@ for _, dirs, _ in os.walk(basedir):
         for f in os.listdir(basedir + '/' + dir):
             rdf = '%s/%s/%s' % (basedir, dir, f)
             xml = minidom.parse(rdf)
-            date = collect_text(xml.getElementsByTagName('dc:date')[0])
+            date = collect_text(xml.getElementsByTagName('dc:date')[0]).replace('-','')[:8];
             title = collect_text(xml.getElementsByTagName('dc:title')[0])
             channel = collect_text(xml.getElementsByTagName('po:channel')[0])
             descr = collect_text(xml.getElementsByTagName('dc:description')[0])

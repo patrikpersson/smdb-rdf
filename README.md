@@ -7,7 +7,7 @@ exempelvis Excel eller Google Docs.
 
 Resultatet är alltså en TV-tablå i Excel-format.
 
-Programmet är skrivet i Python. Jag har använt Python 2.7.10 (Mac).
+Programmet är skrivet i Python. Jag har använt Python 2.7.10 (Mac). Jag har använt det för åren 1981-1985; om RDF-filernas information är strukturerad annorlunda kan programmet ge oväntade resultat.
 
 ---
 
