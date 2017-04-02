@@ -26,18 +26,18 @@ TV-program för år 1982 som exempel. Hur man istället laddar ner information o
 python stage1.py 1982
 ```
 
-Det skapas en katalog som heter `rdf-1982` med filer. Det tar en stund att göra detta (ungefär en halvtimme med en bra nätförbindelse).
+Det skapas en katalog som heter `rdf-tv-1982` med filer. Det tar en stund att göra detta (ungefär en halvtimme med en bra nätförbindelse).
 
 ### 2. Ladda ner RDF-filer för de individuella programmen
 
 ```python
-python stage2.py rdf-1982/*.rdf
+python stage2.py rdf-tv-1982/*.rdf
 ```
 
-Det skapas nu underkataloger i `rdf-1982` för var och en av inspelningarna,
+Det skapas nu underkataloger i `rdf-tv-1982` för var och en av inspelningarna,
 och i dessa kataloger placeras RDF-filer för respektive TV-program. Exempel:
 
-* rdf-1982/
+* rdf-tv-1982/
   * ...
   * 001697919.rdf
   * 001697919/
@@ -52,11 +52,11 @@ och i dessa kataloger placeras RDF-filer för respektive TV-program. Exempel:
 ### 3. Skapa en .csv-fil utifrån de nedladdade RDF-filerna
 
 ```python
-python stage3.py rdf-1982/  > 1982.csv
+python stage3.py rdf-tv-1982/  > tv-1982.csv
 ```
 
 Denna konvertering tar mindre än en minut. Därefter ska det finnas en fil som
-heter `1982.csv` och kan importeras i Excel eller Google Docs.  
+heter `tv-1982.csv` och kan importeras i Excel eller Google Docs.  
 
 ## Ladda ner information om radioprogram
 
@@ -66,4 +66,4 @@ Instruktionerna ovan används för att skapa en TV-tablå. Om man istället vill
 python stage1.py -radio 1982
 ```
 
-Då heter den skapade katalogen istället `rdf-radio-1982`. I de följande stegen är det den katalogen man hänvisar till, istället för `rdf-1982`.
+Då heter den skapade katalogen istället `rdf-radio-1982`. I de följande stegen är det den katalogen man hänvisar till, istället för `rdf-tv-1982`.
