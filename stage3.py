@@ -41,7 +41,8 @@ for _, dirs, _ in os.walk(basedir):
             xml = minidom.parse(rdf)
             date = collect_text(xml.getElementsByTagName('dc:date')[0]).replace('-','')[:8];
             title = collect_text(xml.getElementsByTagName('dc:title')[0])
-            channel = collect_text(xml.getElementsByTagName('po:channel')[0])
+            channelList = xml.getElementsByTagName('po:channel')
+            channel = collect_text(channelList[0]) if len(channelList) else "?"
             descr = collect_text(xml.getElementsByTagName('dc:description')[0])
             
             print ("%s;%s;%s;%s" % (date, channel, title, descr)).replace('"', '').replace("'","").encode('utf-8');
